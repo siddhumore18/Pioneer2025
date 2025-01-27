@@ -5101,6 +5101,45 @@ button.bg-dark:focus {
   transform: rotate(-90deg);
 
 }
+/*Spancerships   */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.infinite-scroll-section {
+    width: 100%;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    padding: 20px 0;
+}
+
+.infinite-scroll-container {
+    display: flex;
+    align-items: center;
+    animation: scroll 20s linear infinite;
+    white-space: nowrap;
+}
+
+.infinite-scroll-container img {
+    width: 200px; /* Set the same size for all images */
+    height: 150px; /* Maintain consistent height */
+    object-fit: cover;
+    margin: 0 10px; /* Add spacing between images */
+    border-radius: 10px; /* Optional rounded corners */
+}
+
+/* Animation for infinite scrolling */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
 
 .embed-responsive-21by9::before {
   padding-top: 42.85714%; }
