@@ -5074,33 +5074,71 @@ button.bg-dark:focus {
 
 /* video 1 and 2 after movie and other  */
 .video{
-  background-color: #000;
-  color: #fff;
-  border-radius: 50% 20%;
-  width: 389px;
-  height: 389px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  margin-left: 30px;
+  width: 500px; /* Set the size of the container */
+    height: 440px;
+    background-color: #000; /* Optional: Set a background for the container */
+    border-radius: 50% 20%; /* Apply the custom border-radius */
+    overflow: hidden; /* Ensure the video doesn't spill outside the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .video1{
-  background-color: #000;
-  color: #fff;
-  border-radius: 50% 20%;
-  width: 389px;
-  height: 389px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  margin-left: 160px;
+   width: 450px; /* Set the size of the container */
+    height: 340px;
+    background-color: #000; /* Optional: Set a background for the container */
+    border-radius: 50% 20%; /* Apply the custom border-radius */
+    overflow: hidden; /* Ensure the video doesn't spill outside the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 130px;
 }
 .video video{
   transform: rotate(-90deg);
-
+  width: 100%; /* Scale video to fit the width */
+  height: 100%; /* Scale video to fit the height */
+  object-fit: contain; /* Ensure the video is fully visible */
+  border-radius: inherit; /* Apply the same border-radius to the video */
 }
+.video1 video{
+  width: 100%; /* Scale video to fit the width */
+  height: 100%; /* Scale video to fit the height */
+  object-fit: contain; /* Ensure the video is fully visible */
+  border-radius: inherit; /* Apply the same border-radius to the video */
+}
+@media (max-width: 1024px) {
+  .video , .video1 {
+      width: 350px; /* Reduce size for tablets */
+      height: 350px;
+      margin-left: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  .video , .video1 {
+      width: 300px; /* Further reduce size for mobile */
+      height: 300px;
+      margin-left: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+  }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+  .video , .video1 {
+      width: 250px; /* Smallest size for narrow screens */
+      height: 250px;
+      margin-left: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+  }
+}
+
 /*Spancerships   */
 body {
     margin: 0;
