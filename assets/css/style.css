@@ -1,0 +1,217 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  /* Banner Section */
+  .w3l-banner1 {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  /* Gallery Container */
+  .gallery-container {
+    position: relative;
+    height: 550px;
+    width: 750px;
+    margin: 80px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #eaeaea;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  /* Gallery Wrapper */
+  .gallery-wrapper {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  /* Gallery Images */
+  .gallery-image {
+    flex: 0 0 100%; /* Each image takes full width */
+    width: 100%;
+    object-fit: cover;
+    margin: 0;
+    
+}
+
+  /* Image Hover Effect */
+  .gallery-image:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Gallery Controls */
+  .gallery-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 50%;
+    z-index: 10;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .gallery-control.prev {
+    left: 10px;
+  }
+  
+  .gallery-control.next {
+    right: 10px;
+  }
+  
+  /* Hover Effect on Controls */
+  .gallery-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Text Content Section */
+  .about-right-faq {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+  }
+  
+  .title-small {
+    font-size: 20px;
+    font-weight: bold;
+    color: #444;
+  }
+  
+  .title-banner {
+    font-size: 36px;
+    font-weight: 700;
+    color: #222;
+  }
+  
+  .title-banner span {
+    color: #007bff;
+  }
+  
+  .mt-4 {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  /* wecome massage
+   */
+   .welcome {
+    text-align: center;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    /* Centering the div */
+    position: absolute; /* Use fixed if you want it to remain in place on scroll */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    /* Optional: Set width and max-width */
+    width: 60%;
+    max-width: 500px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 768px) {
+    .welcome {
+        width: 80%; /* Adjust width for tablets */
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .welcome {
+        width: 90%; /* Adjust width for mobile */
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+  /* Responsive Design */
+  @media (max-width: 992px) {
+    .gallery-container {
+      max-width: 90%;
+      padding: 10px;
+    }
+  
+    .gallery-control {
+      font-size: 18px;
+      padding: 8px 12px;
+    }
+  
+    .title-banner {
+      font-size: 28px;
+    }
+  
+    .title-small {
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .gallery-container {
+      max-width: 95%;
+    }
+  
+    .gallery-image {
+      border-radius: 5px;
+    }
+  
+    .gallery-control {
+      font-size: 16px;
+      padding: 6px 10px;
+    }
+  
+    .title-banner {
+      font-size: 24px;
+    }
+  
+    .title-small {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .gallery-container {
+      max-width: 100%;
+    }
+  
+    .gallery-image {
+      border-radius: 3px;
+    }
+  
+    .gallery-control {
+      font-size: 14px;
+      padding: 5px 8px;
+    }
+  
+    .title-banner {
+      font-size: 20px;
+    }
+  
+    .title-small {
+      font-size: 14px;
+    }
+  }
+  
+  /* poster */
+  
