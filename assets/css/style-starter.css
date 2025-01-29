@@ -10772,7 +10772,9 @@ header.nav-fixed .mode-container i.gg-moon {
 
 .w3l-homeblock3 .area-box {
   text-align: center; }
-
+.w3l-video{
+  margin-bottom: 10px;
+}
 .w3l-video .play-view {
   left: 0;
   right: 0;
