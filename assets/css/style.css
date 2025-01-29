@@ -213,5 +213,32 @@ body {
     }
   }
   
-  /* poster */
+  /* toggal buttaon */
+.navbar-toggler {
+    border: none;
+    outline: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.navbar-toggler-icon {
+    font-size: 1.5rem;
+    transition: opacity 0.3s ease;
+}
+
+/* Initially, hide the close (fa-times) icon */
+.icon-close {
+    display: none;
+}
+
+/* When the navbar is open, hide the menu (fa-bars) icon and show the close (fa-times) icon */
+.navbar-toggler.active .icon-expand {
+    display: none;
+}
+
+.navbar-toggler.active .icon-close {
+    display: inline-block;
+}
+
   
