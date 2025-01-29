@@ -43,4 +43,44 @@ document.querySelector('.gallery-container').addEventListener('mouseout', () => 
   document.querySelector('.poster img').addEventListener('click', function () {
       window.open(this.src, '_blank');
   });
+// taggal button
+document.addEventListener("DOMContentLoaded", function () {
+    const navbarToggler = document.querySelector(".navbar-toggler");
+    const navbarCollapse = document.querySelector("#navbarTogglerDemo02");
+    const navbarLinks = document.querySelectorAll("#navbarTogglerDemo02 a"); // Select all navbar links
+
+    // Toggle the navbar on button click
+    navbarToggler.addEventListener("click", function (event) {
+        event.stopPropagation(); // Prevents the click event from bubbling up
+        this.classList.toggle("active");
+        navbarCollapse.classList.toggle("show");
+    });
+
+    // Close the navbar when clicking anywhere outside
+    document.addEventListener("click", function (event) {
+        const isClickInsideNavbar = navbarCollapse.contains(event.target);
+        const isClickOnToggler = navbarToggler.contains(event.target);
+
+        if (!isClickInsideNavbar && !isClickOnToggler) {
+            navbarCollapse.classList.remove("show");
+            navbarToggler.classList.remove("active");
+        }
+    });
+
+    // Close the navbar when a link is clicked
+    navbarLinks.forEach(link => {
+        link.addEventListener("click", function () {
+            navbarCollapse.classList.remove("show");
+            navbarToggler.classList.remove("active");
+        });
+    });
+
+    // Close the navbar when navigating to a new page
+    window.addEventListener("pageshow", function () {
+        navbarCollapse.classList.remove("show");
+        navbarToggler.classList.remove("active");
+    });
+});
+
+
 
