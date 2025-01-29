@@ -5162,6 +5162,9 @@ button.bg-dark:focus {
     .video-grids-info {
         flex-direction: column-reverse;
     }
+  .text1{
+ margin-top: 100px;
+  }
 
     .video-gd-right,
     .video-gd-left {
@@ -5184,6 +5187,9 @@ button.bg-dark:focus {
         text-align: center;
         padding: 10px;
     }
+  .text1{
+ margin-top: 100px;
+  }
 
     .title-big {
         font-size: 1.5rem;
@@ -5203,7 +5209,9 @@ button.bg-dark:focus {
     .video-gd-left {
         padding: 10px;
     }
-
+.text1{
+ margin-top: 100px;
+  }
     .title-big {
         font-size: 1.3rem;
     }
