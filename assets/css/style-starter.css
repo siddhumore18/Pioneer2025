@@ -5410,7 +5410,7 @@ body {
   .align-self-sm-auto {
     align-self: auto !important; }
   .align-self-sm-start {
-    align-self: flex-start !important; }
+    align-self: center !important; }
   .align-self-sm-end {
     align-self: flex-end !important; }
   .align-self-sm-center {
@@ -5698,7 +5698,9 @@ body {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 1030; }
+  z-index: 1030;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; }
 
 .fixed-bottom {
   position: fixed;
@@ -10341,7 +10343,7 @@ header.nav-fixed .mode-container i.gg-moon {
     top: 10px; } }
 
 .w3l-banner {
-  margin-top: 90px;
+  
   background-color: var(--bg-color); }
 
 .w3l-banner .title-banner {
