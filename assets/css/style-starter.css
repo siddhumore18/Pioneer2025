@@ -5102,30 +5102,8 @@ button.bg-dark:focus {
     border: 0; }
 
 /* video 1 and 2 after movie and other  */
-.video{
-  width: 500px; /* Set the size of the container */
-    height: 440px;
-    background-color: #000; /* Optional: Set a background for the container */
-    border-radius: 50% 20%; /* Apply the custom border-radius */
-    overflow: hidden; /* Ensure the video doesn't spill outside the container */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.video video{
-  transform: rotate(-90deg);
-  width: 100%; /* Scale video to fit the width */
-  height: 100%; /* Scale video to fit the height */
-  object-fit: contain; /* Ensure the video is fully visible */
-  border-radius: inherit; /* Apply the same border-radius to the video */
-}
-.video1 video{
-  width: 100%; /* Scale video to fit the width */
-  height: 100%; /* Scale video to fit the height */
-  object-fit: contain; /* Ensure the video is fully visible */
-  border-radius: inherit; /* Apply the same border-radius to the video */
-}
+
 @media (max-width: 1024px) {
   .video  {
       width: 350px; /* Reduce size for tablets */
@@ -5137,33 +5115,13 @@ button.bg-dark:focus {
 }
 
 /* For mobile devices */
-@media (max-width: 768px) {
-  .video {
-      width: 300px; /* Further reduce size for mobile */
-      height: 300px;
-      margin-left: 10px;
-      margin-top: 10px;
-      margin-bottom: 20px;
-  }
-}
-
-/* For very small screens */
-@media (max-width: 480px) {
-  .video  {
-      width: 250px; /* Smallest size for narrow screens */
-      height: 250px;
-      margin-left: 10px;
-      margin-top: 10px;
-      margin-bottom: 20px;
-  }
-}
 /* For screens smaller than 992px (Tablets) */
 @media (max-width: 991px) {
     .video-grids-info {
         flex-direction: column-reverse;
     }
   .text1{
- margin-top: 300px;
+ margin-top: 100px;
   }
 
     .video-gd-right,
@@ -5188,7 +5146,7 @@ button.bg-dark:focus {
         padding: 10px;
     }
   .text1{
- margin-top: 300px;
+ margin-top: 100px;
   }
 
     .title-big {
@@ -5210,7 +5168,7 @@ button.bg-dark:focus {
         padding: 10px;
     }
 .text1{
- margin-top: 300px;
+ margin-top: 100px;
   }
     .title-big {
         font-size: 1.3rem;
