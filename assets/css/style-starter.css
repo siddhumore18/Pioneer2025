@@ -5112,17 +5112,7 @@ button.bg-dark:focus {
     justify-content: center;
     align-items: center;
 }
-.video1{
-   width: 450px; /* Set the size of the container */
-    height: 340px;
-    background-color: #000; /* Optional: Set a background for the container */
-    border-radius: 50% 20%; /* Apply the custom border-radius */
-    overflow: hidden; /* Ensure the video doesn't spill outside the container */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 130px;
-}
+
 .video video{
   transform: rotate(-90deg);
   width: 100%; /* Scale video to fit the width */
@@ -5137,7 +5127,7 @@ button.bg-dark:focus {
   border-radius: inherit; /* Apply the same border-radius to the video */
 }
 @media (max-width: 1024px) {
-  .video , .video1 {
+  .video  {
       width: 350px; /* Reduce size for tablets */
       height: 350px;
       margin-left: 10px;
@@ -5148,7 +5138,7 @@ button.bg-dark:focus {
 
 /* For mobile devices */
 @media (max-width: 768px) {
-  .video , .video1 {
+  .video {
       width: 300px; /* Further reduce size for mobile */
       height: 300px;
       margin-left: 10px;
@@ -5159,7 +5149,7 @@ button.bg-dark:focus {
 
 /* For very small screens */
 @media (max-width: 480px) {
-  .video , .video1 {
+  .video  {
       width: 250px; /* Smallest size for narrow screens */
       height: 250px;
       margin-left: 10px;
@@ -5167,6 +5157,66 @@ button.bg-dark:focus {
       margin-bottom: 20px;
   }
 }
+/* For screens smaller than 992px (Tablets) */
+@media (max-width: 991px) {
+    .video-grids-info {
+        flex-direction: column-reverse;
+    }
+
+    .video-gd-right,
+    .video-gd-left {
+        width: 100%;
+    }
+
+    .video-gd-left {
+        padding: 20px;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* For screens smaller than 768px (Mobile Devices) */
+@media (max-width: 767px) {
+    .video-wrap {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .title-big {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    iframe {
+        height: 250px;
+    }
+}
+
+/* For screens smaller than 480px (Small Phones) */
+@media (max-width: 480px) {
+    .video-gd-left {
+        padding: 10px;
+    }
+
+    .title-big {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    iframe {
+        height: 200px;
+    }
+}
+
 
 /*Spancerships   */
 body {
