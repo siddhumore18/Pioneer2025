@@ -124,7 +124,7 @@ body {
     position: absolute; /* Use fixed if you want it to remain in place on scroll */
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 50%);
     
     /* Optional: Set width and max-width */
     width: 60%;
