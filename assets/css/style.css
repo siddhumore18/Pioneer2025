@@ -28,6 +28,17 @@ body {
   color: #000000;
   text-shadow: 2px 2px 10px rgba(255, 69, 0, 0.7);
 }
+  @media screen and (max-width: 768px) {
+  .glowing-text {
+      font-size: 3rem; /* Reduce font size for tablets */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .glowing-text {
+      font-size: 2rem; /* Reduce font size for mobile screens */
+  }
+}
   
   /* Banner Section */
   .w3l-banner1 {
