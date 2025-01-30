@@ -1,53 +1,29 @@
-// Get modal element
-var modal = document.getElementById("eventModal");
-var modalTitle = document.getElementById("modal-title");
-var modalDescription = document.getElementById("modal-description");
-var closeModal = document.getElementsByClassName("close")[0];
+// Load details for Praklap event
+document.getElementById('loadPraklapDetails').addEventListener('click', function() {
+    let praklapDetails = `
+        <h3>Praklap - Poster Presentations</h3>
+        <p>This event is all about showcasing your innovative ideas through posters. Participants will be judged on creativity, design, and clarity of the message.</p>
+        <p>Submission Guidelines: Posters must be submitted in a PDF format by the specified date. The poster should clearly communicate the idea or research being presented.</p>
+    `;
+    document.getElementById('praklapDetails').innerHTML = praklapDetails;
+});
 
-// Event data
-const events = {
-    abhivyakti: {
-        title: "Abhivyakti - Paper Presentation",
-        description: "A platform for participants to present groundbreaking research ideas. A chance to showcase your innovative research to industry professionals."
-    },
-    praklap: {
-        title: "Praklap - Paper Presentation",
-        description: "Showcasing practical and impactful research in technology with real-world applications."
-    },
-    battleblitz: {
-        title: "Battle Blitz - Game",
-        description: "A thrilling competitive game event where strategy meets excitement. Test your skills and compete for the championship."
-    }
-};
+// Load details for Abhivyakti event
+document.getElementById('loadAbhivyaktiDetails').addEventListener('click', function() {
+    let abhivyaktiDetails = `
+        <h3>Abhivyakti - Paper Presentations</h3>
+        <p>Present your research paper and gain recognition from experts in the field. A great opportunity for students to engage in intellectual discussions.</p>
+        <p>Paper Submission Guidelines: Papers must be original and submitted by the deadline in the specified format (PDF/Word). Presentations should not exceed 10 minutes.</p>
+    `;
+    document.getElementById('abhivyaktiDetails').innerHTML = abhivyaktiDetails;
+});
 
-// Function to open modal with event details
-function showEventDetails(eventName) {
-    modal.style.display = "block";
-    modalTitle.textContent = events[eventName].title;
-    modalDescription.textContent = events[eventName].description;
-}
-
-// Close modal when user clicks 'x'
-closeModal.onclick = function() {
-    modal.style.display = "none";
-}
-
-// Close modal when clicking outside of the modal content
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-
-// Add event listeners to 'See Details' buttons
-document.getElementById("abhivyakti-btn").onclick = function() {
-    showEventDetails('abhivyakti');
-};
-
-document.getElementById("praklap-btn").onclick = function() {
-    showEventDetails('praklap');
-};
-
-document.getElementById("battleblitz-btn").onclick = function() {
-    showEventDetails('battleblitz');
-};
+// Load details for Battle Blitz event
+document.getElementById('loadBattleBlitzDetails').addEventListener('click', function() {
+    let battleBlitzDetails = `
+        <h3>Battle Blitz - Gaming</h3>
+        <p>This event is for gamers to compete in a series of online challenges. The competition is intense and will test your skills in various games.</p>
+        <p>Rules: Participants must register in teams of 3. The games will be announced 24 hours before the event.</p>
+    `;
+    document.getElementById('battleBlitzDetails').innerHTML = battleBlitzDetails;
+});
