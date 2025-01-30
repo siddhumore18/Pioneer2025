@@ -1,0 +1,178 @@
+section.event_img {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+section.event_img .event-container {
+    width: 80%;
+    height: 450px;
+    padding: 30px 0; /* Adjusted padding to reduce top and bottom space */
+    text-align: center;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: auto;
+}
+
+section.event_img .event-container img {
+    max-width: 60%;
+    height: 50%;
+    border-radius: 8px;
+}
+
+section.event_img .event-container .event-date {
+    font-size: 3rem;
+    margin: 15px 0;
+    color: #333;
+}
+
+section.event_img .event-container .event-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 2rem;
+    color: white;
+    background-color: #007BFF;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+section.event_img .event-container .event-button:hover {
+    background-color: #0056b3;
+}
+
+
+section.block_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: #f4f4f9;
+    font-family: Arial, sans-serif;
+    padding: 40px 0;
+    margin-bottom: 30px; /* Reduced margin between blocks */
+}
+
+section.block_1 .container_1 {
+    width: 80%;
+    max-width: 1200px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 32px 16px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+section.block_1 .container_1 .title_1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+section.block_1 .container_1 p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+section.block_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto; /* Adjust as needed */
+    background-color: #f4f4f9;
+    font-family: Arial, sans-serif;
+    padding: 40px 0;
+    margin-top: 30px; /* Reduced margin between blocks */
+}
+
+section.block_2 .container_2 {
+    width: 80%; /* Same as the previous block */
+    max-width: 1200px; /* Ensures consistency with other sections if they use a max-width */
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 32px 16px; /* Matches the padding of other blocks */
+    text-align: center;
+    margin: 0 auto;
+}
+
+section.block_2 .container_2 .title_2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+section.block_2 .container_2 p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.scroll_img {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #f4f4f9;
+}
+
+.scroll-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-wrapper {
+    width: 80%;
+    border-radius: 12px;
+    background-color: white;
+    padding: 20px; /* Padding inside the container for separation */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    overflow: hidden; /* Ensure images do not overflow out of container */
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.scroll-images-wrapper {
+    display: flex;
+    overflow: hidden; /* Hide overflow to ensure images are confined within container */
+}
+
+.scroll-images {
+    display: flex;
+    padding-bottom: 10px; /* Add padding at the bottom of the scroller */
+    animation: scroll 40s linear infinite; /* Animation for continuous scroll */
+}
+
+.scroll-images img {
+    width: 200px; /* Adjust image size as needed */
+    height: auto;
+    margin-right: 20px; /* Space between images */
+    border-radius: 8px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
