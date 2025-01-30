@@ -81,6 +81,28 @@ document.addEventListener("DOMContentLoaded", function () {
         navbarToggler.classList.remove("active");
     });
 });
+// dark and light mode
+document.addEventListener("DOMContentLoaded", function () {
+  const toggleSwitch = document.getElementById("checkbox");
 
+  // Check if the theme is already set in local storage
+  const savedTheme = localStorage.getItem("theme");
+
+  if (savedTheme === "dark") {
+      document.body.classList.add("dark-mode");
+      toggleSwitch.checked = true; // Keep the toggle ON if dark mode was enabled
+  }
+
+  // Function to switch the theme
+  toggleSwitch.addEventListener("change", function () {
+      if (toggleSwitch.checked) {
+          document.body.classList.add("dark-mode");
+          localStorage.setItem("theme", "dark");
+      } else {
+          document.body.classList.remove("dark-mode");
+          localStorage.setItem("theme", "light");
+      }
+  });
+});
 
 
