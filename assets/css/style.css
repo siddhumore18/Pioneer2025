@@ -275,5 +275,78 @@ body {
 .navbar-toggler.active .icon-close {
     display: inline-block;
 }
+/* 🌞 Light Mode (Default) */
+body {
+  background-color: #ffffff;
+  color: #000000; 
+  transition: all 0.3s ease-in-out;
+}
+
+/* 🌙 Dark Mode */
+.dark-mode {
+  background-color: #181818 !important; /* Dark background for body */
+  color: #ffffff !important; /* Light text */
+}
+
+/* Ensure Header & Navbar Change */
+.dark-mode #site-header {
+  background-color: #1a1a1a !important; /* Dark navbar */
+  border-bottom: 1px solid #333; /* Add subtle border */
+}
+
+.dark-mode .navbar-nav .nav-link {
+  color: #ffffff !important; /* Make nav links white */
+}
+
+/* Ensure Banner and Other Sections Change */
+.dark-mode .w3l-banner1,
+.dark-mode .gallery-container .welcome {
+  background-color: #181818 !important; /* Dark section background */
+}
+
+/* Gallery Images (Optional: Dark Overlay) */
+.dark-mode .gallery-image {
+  filter: brightness(0.8); /* Darken images slightly */
+}
+
+/* Ensure Text in Sections is White */
+.dark-mode h1, 
+.dark-mode h2, 
+.dark-mode h3, 
+.dark-mode p, 
+.dark-mode span, 
+.dark-mode div {
+  color: #ffffff !important;
+}
+
+/* Light Mode Links */
+a {
+  color: #000000;
+}
+
+/* Dark Mode Links */
+.dark-mode a {
+  color: #ffcc00 !important; /* Yellow link color for contrast */
+}
+/* Light Mode (Default) */
+.about-right-faq.welcome {
+  background-color: #ffffff; /* Default light mode background */
+  color: #000000; /* Default text color */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Dark Mode */
+.dark-mode .about-right-faq.welcome {
+  background-color: #181818 !important; /* Dark mode background */
+  color: #ffffff !important; /* Ensure text turns white */
+  border: 1px solid #333; /* Optional: Add border for visibility */
+}
+
+/* Ensure Headings & Paragraphs Inside Turn White */
+.dark-mode .about-right-faq.welcome h5,
+.dark-mode .about-right-faq.welcome h3,
+.dark-mode .about-right-faq.welcome p {
+  color: #ffffff !important;
+}
 
   
