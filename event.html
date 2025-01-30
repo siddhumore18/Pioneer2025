@@ -3,55 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>National-Level Tech Festival</title>
+    <title>Pioneer 2k25 - National Level Tech Festival</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
-        <h1>National-Level Tech Festival</h1>
+        <h1>Pioneer 2k25</h1>
+        <p>National Level Tech Festival</p>
+        <nav>
+            <a href="#praklap">Praklap</a>
+            <a href="#abhivyakti">Abhivyakti</a>
+            <a href="#battleblitz">Battle Blitz</a>
+        </nav>
     </header>
 
     <section id="events">
-        <div class="event">
-            <img src="abhivyakti-poster.jpg" alt="Abhivyakti Poster" class="event-poster">
-            <h2>Abhivyakti - Paper Presentation</h2>
-            <p>A platform for participants to present groundbreaking research ideas.</p>
-            <button id="abhivyakti-btn" class="btn">See Details</button>
-            <a href="register-abhivyakti.html" class="btn">Register</a>
+        <h2>Events</h2>
+
+        <div class="event" id="praklap">
+            <h3>Praklap - Poster Presentations</h3>
+            <p>A platform for students to showcase their creativity and ideas through posters. Present your research or innovative ideas to a panel of judges.</p>
+            <button id="loadPraklapDetails">View Details</button>
+            <div id="praklapDetails"></div>
+            <a href="register.html">Register Now</a>
         </div>
 
-        <div class="event">
-            <img src="praklap-poster.jpg" alt="Praklap Poster" class="event-poster">
-            <h2>Praklap - Paper Presentation</h2>
-            <p>Showcasing practical and impactful research in technology.</p>
-            <button id="praklap-btn" class="btn">See Details</button>
-            <a href="register-praklap.html" class="btn">Register</a>
+        <div class="event" id="abhivyakti">
+            <h3>Abhivyakti - Paper Presentations</h3>
+            <p>Present your research paper and gain recognition from experts in the field. A great opportunity for students to engage in intellectual discussions.</p>
+            <button id="loadAbhivyaktiDetails">View Details</button>
+            <div id="abhivyaktiDetails"></div>
+            <a href="register.html">Register Now</a>
         </div>
 
-        <div class="event">
-            <img src="battleblitz-poster.jpg" alt="Battle Blitz Poster" class="event-poster">
-            <h2>Battle Blitz - Game</h2>
-            <p>A thrilling competitive game event where strategy meets excitement.</p>
-            <button id="battleblitz-btn" class="btn">See Details</button>
-            <a href="register-battleblitz.html" class="btn">Register</a>
+        <div class="event" id="battleblitz">
+            <h3>Battle Blitz - Gaming</h3>
+            <p>Join the ultimate gaming showdown. Battle against the best gamers and prove your skills in this exciting competition.</p>
+            <button id="loadBattleBlitzDetails">View Details</button>
+            <div id="battleBlitzDetails"></div>
+            <a href="register.html">Register Now</a>
         </div>
     </section>
 
-    <!-- Modal for event details -->
-    <div id="eventModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2 id="modal-title"></h2>
-            <p id="modal-description"></p>
-        </div>
-    </div>
-
     <footer>
-        <p>&copy; 2025 Tech Festival | All Rights Reserved</p>
+        <p>&copy; 2025 Pioneer 2k25. All Rights Reserved.</p>
     </footer>
 
-    <script src="Script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
