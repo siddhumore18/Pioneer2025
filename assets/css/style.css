@@ -6,40 +6,7 @@ body {
     background-color: #f9f9f9;
   }
    /* pioneer */
-  .glowing-text {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #000000;
-    text-shadow: 0 0 5px rgb(0, 255, 149), 0 0 10px rgb(0, 255, 200), 0 0 15px rgb(0, 255, 149);
-    animation: glow 1.5s infinite alternate;
-}
-
-@keyframes glow {
-    from {
-        text-shadow: 0 0 15px rgb(255, 4, 0), 0 0 10px rgb(255, 81, 0), 0 0 15px rgba(255, 13, 0, 0.914);
-    }
-    to {
-        text-shadow: 0 0 10px rgb(0, 255, 238), 0 0 20px rgb(0, 229, 255), 0 0 30px rgb(0, 229, 255);
-    }
-}
-.fancy-shadow {
-  font-family: 'Lobster', cursive;
-  font-size: 3rem;
-  color: #000000;
-  text-shadow: 2px 2px 10px rgba(255, 69, 0, 0.7);
-}
-  @media screen and (max-width: 768px) {
-  .glowing-text {
-      font-size: 3rem; /* Reduce font size for tablets */
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .glowing-text {
-      font-size: 2rem; /* Reduce font size for mobile screens */
-  }
-}
-  
+ 
   /* Banner Section */
   .w3l-banner1 {
     padding: 50px 0;
@@ -50,8 +17,8 @@ body {
   /* Gallery Container */
   .gallery-container {
     position: relative;
-    height: 550px;
-    width: 750px;
+    height: 650px;
+    width: 80%;
     margin: 80px auto;
     overflow: hidden;
     border-radius: 10px;
