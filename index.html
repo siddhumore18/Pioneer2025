@@ -690,27 +690,31 @@ Author URL: http://w3layouts.com
 </script>
 	  <!-- sponcers -->
  <script>
-  document.addEventListener("DOMContentLoaded", () => {
+ document.addEventListener("DOMContentLoaded", () => {
     const container = document.querySelector(".infinite-scroll-container");
 
     if (container) {
         const images = Array.from(container.children);
-        const totalImages = images.length;
+        
+        // Duplicate images if needed
+        images.forEach(img => {
+            const clone = img.cloneNode(true);
+            container.appendChild(clone);
+        });
 
-        // Clone images only if they are less than needed for a smooth scroll
-        if (totalImages < 29) {
-            images.forEach(img => {
-                const clone = img.cloneNode(true);
-                container.appendChild(clone);
-            });
+        // Dynamically adjust animation speed based on screen size
+        function setScrollSpeed() {
+            const totalWidth = container.scrollWidth / 2; // Half of total width for looping
+            let speedFactor = window.innerWidth <= 768 ? 200 : 100; // Faster on mobile
+            let duration = totalWidth / speedFactor; // Adjust speed (lower = faster)
+            container.style.animationDuration = `${duration}s`;
         }
 
-        // Dynamically adjust animation duration
-        const totalWidth = container.scrollWidth / 2; // Half of total width for a smooth loop
-        const duration = totalWidth / 70; // Adjust speed (lower = faster)
-        container.style.animationDuration = `${duration}s`;
+        setScrollSpeed(); // Set speed on load
+        window.addEventListener("resize", setScrollSpeed); // Adjust speed on resize
     }
 });
+
 
  </script>
 <!--//MENU-JS-->
