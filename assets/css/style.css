@@ -153,6 +153,8 @@ body {
     .gallery-container {
       max-width: 90%;
       padding: 10px;
+        height:400px;
+        width:100%;
     }
   
     .gallery-control {
