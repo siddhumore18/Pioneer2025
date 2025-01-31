@@ -693,14 +693,23 @@ Author URL: http://w3layouts.com
   document.addEventListener("DOMContentLoaded", () => {
     const container = document.querySelector(".infinite-scroll-container");
 
-    // Duplicate the content for seamless scrolling
-    const content = container.innerHTML;
-    container.innerHTML += content;
+    if (container) {
+        const images = Array.from(container.children);
+        const totalImages = images.length;
 
-    // Optional: Adjust animation speed dynamically based on content length
-    const totalWidth = container.scrollWidth / 2; // Divide by 2 because we duplicated the content
-    const duration = totalWidth / 400; // Adjust this value to control speed
-    container.style.animationDuration = `${duration}s`;
+        // Clone images only if they are less than needed for a smooth scroll
+        if (totalImages < 29) {
+            images.forEach(img => {
+                const clone = img.cloneNode(true);
+                container.appendChild(clone);
+            });
+        }
+
+        // Dynamically adjust animation duration
+        const totalWidth = container.scrollWidth / 2; // Half of total width for a smooth loop
+        const duration = totalWidth / 70; // Adjust speed (lower = faster)
+        container.style.animationDuration = `${duration}s`;
+    }
 });
 
  </script>
