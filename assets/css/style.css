@@ -319,4 +319,35 @@ a {
   color: #ffffff !important;
 }
 
+ .infinite-scroll-section {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  width: 100%;
+}
+
+.infinite-scroll-container {
+  display: flex;
+  gap: 20px; /* Adjust spacing between images */
+  width: max-content; /* Ensure the container fits all images */
+  animation: scroll 30s linear infinite; /* Set animation */
+}
+
+.infinite-scroll-container img {
+  height: 80px; /* Adjust size as needed */
+  width: auto;
+  object-fit: contain;
+}
+
+/* Keyframes for infinite scrolling */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+
   
